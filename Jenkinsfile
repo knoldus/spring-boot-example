@@ -1,7 +1,10 @@
 pipeline{
-    agent{
-        label "maven"
+    agent any 
+    tools {
+        maven 'maven'
+        jdk 'java'
     }
+    
     stages{
         stage("Build"){
             steps{
