@@ -22,5 +22,11 @@ pipeline{
             }
         }
     }
+        post {
+            success {
+                echo "The Pipeline Is Success :"
+            }
+        }
 }
+
            
