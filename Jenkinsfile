@@ -6,11 +6,6 @@ pipeline{
     }
     
     stages{
-        stage("Build"){
-            steps{
-                sh 'mvn install'
-            }
-        }
         stage("Compile"){
             steps{
                 sh 'mvn clean compile'
